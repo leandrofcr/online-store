@@ -10,6 +10,8 @@ Neste projeto foi criada uma versão simplificada, sem persistência no banco de
   - E por fim, finalizar a compra (simulada) dos itens selecionados.
 
 
+![Online Store Preview](https://github.com/leandrofcr/online-store/blob/main/preview.gif)
+
 # Habilidades
 
 Nesse projeto, as seguintes habilidades foram desenvolvidas:
