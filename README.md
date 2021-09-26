@@ -123,3 +123,5 @@ Para garantir a qualidade do código de forma a tê-lo mais legível, de mais f�
 npm run lint
 npm run lint:styles
 ```
+
+LET'S GO!
