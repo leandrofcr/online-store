@@ -3,7 +3,7 @@
 
 ## What was developed
 
-In this project, a simplified version was created, without persistence in the database, of an **online store**, developed in group its functionalities according to the demands defined in a _Kanban_ framework, in a scenario closer to the labor market. Based on these demands, we have an application where users can:
+In this project, a simplified version was created, without persistence in the database, of an **online store**, developed in group its functionalities according to the demands defined in a _Kanban_ board, in a scenario closer to the labor market. Based on these demands, we have an application where users can:
 
   - Search products by terms and categories from the _Mercado Livre API_;
   - Interact with the searched products in order to add and remove them from a shopping cart in different quantities;
