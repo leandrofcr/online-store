@@ -1,101 +1,101 @@
-# Boas vindas ao repositório do projeto de Front-End Online Store!
+# Welcome to the Front-End Online Store project repository!
 
 
-## O que foi desenvolvido
+## What was developed
 
-Neste projeto foi criada uma versão simplificada, sem persistência no banco de dados, de uma **loja online**, desenvolvido em grupo suas funcionalidades de acordo com demandas definidas em um quadro _Kanban_, em um cenário mais próximo ao do mercado de trabalho. A partir dessas demandas, temos uma aplicação onde os usuários poderão:
-  - Buscar produtos por termos e categorias a partir da _API do Mercado Livre_;
-  - Interagir com os produtos buscados de modo a adicioná-los e removê-los de um carrinho de compras em diferentes quantidades;
-  - Visualizar detalhes e avaliações prévias de um produto, bem como criar novas avaliações;
-  - E por fim, finalizar a compra (simulada) dos itens selecionados.
+In this project, a simplified version was created, without persistence in the database, of an **online store**, developed in group its functionalities according to the demands defined in a _Kanban_ framework, in a scenario closer to the labor market. Based on these demands, we have an application where users can:
+
+  - Search products by terms and categories from the _Mercado Livre API_;
+  - Interact with the searched products in order to add and remove them from a shopping cart in different quantities;
+  - View details and previous reviews of a product, as well as create new reviews;
+  - And finally, finalize the purchase (simulated) of the selected items.
 
 
 ![Online Store Preview](https://github.com/leandrofcr/online-store/blob/main/preview.gif)
 
-# Habilidades
+# Skills
 
-Nesse projeto, as seguintes habilidades foram desenvolvidas:
+In this project, the following skills were developed:
 
-* Entender o que são Métodos Ágeis
-* Entender o que é Kanban
-* Entender o que é Scrum
-* Trabalhar em equipes utilizando Kanban ou Scrum de maneira eficaz
-* Praticar todas as habilidades desenvolvidas até agora no módulo de Front-End do curso de desenvolvimento web da Trybe.
+* Understand what Agile Methods are
+* Understand what Kanban is
+* Understand what Scrum is
+* Work effectively in teams using Kanban or Scrum
+* Practice all activities developed so far in the Front-End module of Trybe's web development course.
 
 ---
 
+### How to clone the project
 
-### Como clonar o projeto
-
-1. Clone o repositório
+1. Clone the repository
   * `git clone git@github.com:leandrofcr/online-store.git`.
-  * Entre na pasta do repositório que você acabou de clonar:
+  * Enter the repository folder you just cloned:
     * `cd online-store`
 
-2. Instale as dependências e inicialize o projeto
-  * Instale as dependências:
+2. Install dependencies and start the project
+  * Install dependencies:
     * `npm install`
-  * Inicialize o projeto:
-    * `npm start` (uma nova página deve abrir no seu navegador com a tela inicial do projeto)
+  * Start the project:
+    * `npm start` (a new page should open in your browser with the project's home screen)
 
 
 ---
 
-## Execução de testes unitários
+## Running unit tests
 
-Foi utilizado [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) para execução dos testes unitários. Esse _framework_ de testes utiliza algumas marcações no código para verificar a solução proposta. Uma dessas marcações é o atributo `data-testid` e faremos uso dele aqui, como nos exemplos abaixo:
+[React Testing Library](https://testing-library.com/docs/react-testing-library/intro) was used to perform the unit tests. This test _framework_ uses some markup in the code to verify the proposed solution. One of these tags is the `data-testid` attribute and we will make use of it here, as in the examples below:
 
 ```html
 <button data-testid="my-action" ></button>
 ```
 
-ou
+or
 
 ```html
 <a data-testid="my-action"><a/>
 ```
 
-Ou seja, o atributo `data-testid="my-action"` servirá para o React Testing Library(RTL) identificar o elemento e, dessa forma, conseguiremos realizar testes unitários focados no comportamento da aplicação. Afim de verificar a solução proposta, você pode executar todos os testes unitários localmente com o comando abaixo:
+In other words, the attribute `data-testid =" my-action "` will serve for the React Testing Library (RTL) to identify the element and, thus, we will be able to perform unit tests focused on the application's behavior. In order to verify the proposed solution, you can run all unit tests locally with the command below:
 
 ```bash
 npm test
 ```
 
-Você pode executar os testes para um único requisito passando, como parâmetro para o comando, o nome do arquivo de teste alvo:
+You can run the tests for a single requirement, as a parameter for the command, the name of the target test file:
 
 ```bash
 npm test src/__tests__/requirement1.test.js
 ```
 
-## Documentação da API do Mercado Livre
-A aplicação _web_ irá consumir os dados da API do _Mercado Livre_ para realizar a busca de itens da loja online. Para realizar essas buscas, é necessário consultar os seguintes _endpoints_:
+## Mercado Livre API Documentation
+The web application will consume the data from the _Mercado Livre_ API to search for items from the online store. To perform these searches, it is necessary to consult the following endpoints:
 
-- Para listar as categorias disponíveis:
-  - Tipo da requisição: `GET`
+- To list as available:
+  - Type of request: `GET`
   - Endpoint: https://api.mercadolibre.com/sites/MLB/categories
-- Para buscar por itens por termo:
-  - Tipo da requisição: `GET`
-  - Parâmetro de busca $QUERY (este parâmetro deve ser substituído pelo valor do campo de busca)
+- To search for items by term:
+  - Type of request: `GET`
+  - Search parameter $QUERY (this parameter must be replaced by the search field value)
   - Endpoint: https://api.mercadolibre.com/sites/MLB/search?q=$QUERY
-- Para buscar itens por categoria:
-  - Tipo da requisição: `GET`
-  - Parâmetro de busca $CATEGORY_ID (este parâmetro deve ser substituído pelo ID da categoria selecionada)
+- To search for items by category:
+  - Type of request: `GET`
+  - $CATEGORY_ID search parameter (this parameter must be replaced by the correct category ID)
   - Endpoint: https://api.mercadolibre.com/sites/MLB/search?category=$CATEGORY_ID
-- Para buscar itens de uma categoria por termo:
-  - Tipo da requisição: `GET`
-  - Parâmetro de busca $QUERY (este parâmetro deve ser substituído pelo valor do campo de busca)
-  - Parâmetro de busca $CATEGORY_ID (este parâmetro deve ser substituído pelo ID da categoria selecionada)
+- To search for items from a category by term:
+  - Type of request: `GET`
+  - Search parameter $QUERY (this parameter must be replaced by the search field value)
+  - $CATEGORY_ID search parameter (this parameter must be replaced by the correct category ID)
   - Endpoint: https://api.mercadolibre.com/sites/MLB/search?category=$CATEGORY_ID&q=$QUERY
 
-Se você quiser aprender mais sobre a API do _Mercado Livre_, veja a [documentação](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas).
+If you want to learn more about the _Mercado Livre_ API, see [documents] (https://developers.mercadolivre.com.br/pt_br/itens-e-buscas).
 
-### Exemplo de requisição para listar categorias
+### Example request to list categories
 
 ```
 "https://api.mercadolibre.com/sites/MLB/categories"
 ```
 
-O retorno desse endpoint será algo no formato:
+The return from this endpoint will be something like this:
 
 ```json
 [
@@ -107,19 +107,19 @@ O retorno desse endpoint será algo no formato:
 ]
 ```
 
-### Exemplo de requisição de busca
+### Example Search Request
 
 ```
 "https://api.mercadolibre.com/sites/MLB/search?category=MLB1055&q=Motorola"
 ```
 
-O retorno desse endpoint será algo como o exemplo que temos [neste arquivo](exemplo-motorola.json).
+### Seek Request Example The return from this endpoint will be similar to the example we have [in this file] (example-motorola.json). 
 
-⚠ **ATENÇÃO! Se der erro de CORS aperte `ctrl + shift + r` no seu navegador** ⚠
+⚠ **ATTENTION! If you get CORS error press `ctrl + shift + r` in your browser** ⚠
 
 ### Linter
 
-Para garantir a qualidade do código de forma a tê-lo mais legível, de mais fácil manutenção e seguindo as boas práticas de desenvolvimento nós utilizamos neste projeto os linters `ESLint` e `Stylelint`. Para rodar os linters localmente no projeto, execute os comandos abaixo:
+To ensure the quality of the code in order to make it more readable, easier to maintain and following good development practices, we used the `ESLint` and `Stylelint` linters in this project. To run the linters locally in the project, run the commands below:
 
 ```bash
 npm run lint
