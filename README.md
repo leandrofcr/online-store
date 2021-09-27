@@ -113,7 +113,7 @@ The return from this endpoint will be something like this:
 "https://api.mercadolibre.com/sites/MLB/search?category=MLB1055&q=Motorola"
 ```
 
-### Seek Request Example The return from this endpoint will be similar to the example we have [in this file] (example-motorola.json). 
+ Search request example. The return from this endpoint will be similar to the example we have [in this file] (example-motorola.json). 
 
 ⚠ **ATTENTION! If you get CORS error press `ctrl + shift + r` in your browser** ⚠
 
