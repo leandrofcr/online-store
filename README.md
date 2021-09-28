@@ -1,4 +1,4 @@
-# Welcome to the Front-End Online Store project repository!
+# Welcome to the Online Store project repository!
 
 
 ## What was developed
